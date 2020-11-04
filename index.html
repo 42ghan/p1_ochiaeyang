@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="danhaniyo">
+    <style>
+      body {
+        margin:0;
+      }
+      
+      /*including the padding and border in the total width and height*/
+      * {
+        box-sizing:border-box;
+      }
+
+      /*responsive grid-view with 12 columns*/
+      .col-1 {
+        width:8.33%;
+      }
+      
+      .col-2 {
+        width:16.66%;
+      }
+      
+      .col-3 {
+        width:25%;
+      }
+
+      .col-4 {
+        width:33.33%;
+      }
+      
+      .col-5 {
+        width:41.66%;
+      }
+
+      .col-6 {
+        width:50%;
+      }
+
+      .col-7 {
+        width:58.33%;
+      }
+
+      .col-8 {
+        width:66.66%
+      }
+
+      .col-9 {
+        width:75%;
+      }
+
+      .col-10 {
+        width:83.33%;
+      }
+
+      .col-11 {
+        width:91.66%;
+      }
+
+      .col-12 {
+        width:100%
+      }
+
+      /*float to the left and padding of 15px to all columns*/
+      [class*="col-"] {
+        float:left;
+        padding:15px;
+      }
+
+      /*clear float to the left for inline-row elements*/
+      .row::after {
+        content:"";
+        clear:both;
+        display:table;
+      }
+
+      /*nav_bar style*/
+      .nav-bar {
+        background:rgba(01,44,22,0.6);
+      }
+      
+      #logo {
+        width:40px;
+        vertical-align:middle;
+      }
+
+      .header a, .nav a{
+        font-size:18px;
+        color:white;
+        text-decoration:none;
+      }
+
+      .nav li {
+        display:inline-block;
+      }
+    /*
+      .dropdown-content {
+        display:none;
+        position:absolute;
+        background:rgba(01,44,22,0.4);
+        min-width:160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index:1;
+      }
+
+      .dropbtn{
+        display:block;
+        text-align:center;
+        padding: 38px 30px;
+        margin:0;
+      }
+    */
+
+    </style>
+  </head>
+  <body>
+    <div class="row nav-bar">
+      <div class="col-5 header">
+        <header>
+          <h1>
+            <a href="index.html">
+              <img src="images/favicon/android-icon-96x96.png" id="logo">
+              오치애양교회
+            </a>
+          </h1>
+        </header>
+      </div>
+ 
+      <div class="col-7 nav">
+        <nav>
+          <ul>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="branches dropbtn">교회 소개</a>
+              <div class="dropdown-content">
+                <a href="pages/about.html">오치애양교회</a>
+                <a href="pages/pastor.html">담임목사</a>
+                <a href="pages/location">찾아오는 길</a>
+              </div>
+            </li>
+            <li class="nav"><a href="pages/worship.html">예배</a></li>
+            <li class="nav"><a href="pages/discipleship.html">성장</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+    <section>
+
+    </section>
+    <section>
+      <article>
+
+      </article>
+    </section>
+    <footer>
+
+    </footer>
+  </body>
+</html>
