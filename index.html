@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="danhaniyo">
     <style>
-      body {
+      * {
         margin:0;
+        outline:0;        
       }
       
       /*including the padding and border in the total width and height*/
@@ -63,39 +64,84 @@
         width:100%
       }
 
-      /*float to the left and padding of 15px to all columns*/
+      /*float to the left & padding of 15px to all columns*/
       [class*="col-"] {
+        display:grid;
         float:left;
-        padding:15px;
       }
 
       /*clear float to the left for inline-row elements*/
       .row::after {
         content:"";
         clear:both;
-        display:table;
+      }
+
+      /*header & cover bar style*/
+      .header-cover {
+        background:url(images/background1.jpg) no-repeat;
+        background-size:cover;
       }
 
       /*nav_bar style*/
       .nav-bar {
         background:rgba(01,44,22,0.6);
+        height:100px;
       }
       
+      header, nav {
+        height:100px;
+      }
+
       #logo {
         width:40px;
         vertical-align:middle;
       }
 
-      .header a, .nav a{
-        font-size:18px;
+      header a,
+      nav a {
         color:white;
         text-decoration:none;
       }
 
-      .nav li {
-        display:inline-block;
+      header a {
+        font-size:40px;
+        font-weight:bold;
+        padding:22.96px 0 22.96px 25px;
+        vertical-align:middle;
       }
-    /*
+
+      nav ul {
+        list-style-type:none;
+        overflow:hidden;
+        text-align:right;
+        padding-right:60px;
+        height:100px;
+      }
+
+      nav li {
+        display:inline-block;
+        font-size:18px;
+      }
+
+      nav li a {
+        display:block;
+        padding:38px 30px;
+      }
+
+      nav a:hover:not(.youtube),
+      .dropdown-content a:hover {
+        background:rgba(01,44,22,0.6);
+      }
+
+      .youtube {
+        padding:33px 30px;
+      }
+
+      nav img {
+        width:34px;
+        vertical-align:middle;
+      }
+
       .dropdown-content {
         display:none;
         position:absolute;
@@ -104,52 +150,77 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index:1;
       }
-
-      .dropbtn{
+      .dropdown-content a {
+        color:white;
+        padding:12px 16px;
+        font-size:16px;
+        text-decoration:none;
         display:block;
         text-align:center;
-        padding: 38px 30px;
-        margin:0;
       }
-    */
+
+      .dropdown:hover .dropdown-content {
+         display: block;
+      }
+
+      /*cover-section style*/
+      .cover-section {
+        height:500px;
+        text-align:center;
+        padding:150px 0;
+      }
+      
+      .cover-section p {
+        font-size:30px;
+        font-weight:bold;
+      }
+
+      .cover h1 {
+        font-size:60px;
+        padding:30px;
+      }
 
     </style>
   </head>
   <body>
-    <div class="row nav-bar">
-      <div class="col-5 header">
-        <header>
-          <h1>
-            <a href="index.html">
-              <img src="images/favicon/android-icon-96x96.png" id="logo">
-              오치애양교회
-            </a>
-          </h1>
+    <div class="header-cover">
+      <div class="row nav-bar">
+        <header class="col-5"> 
+          <a href="index.html">
+                <img src="images/favicon/android-icon-96x96.png" id="logo">
+                오치애양교회
+          </a>
         </header>
-      </div>
- 
-      <div class="col-7 nav">
-        <nav>
+
+        <nav class="col-7">
           <ul>
             <li class="dropdown">
-              <a href="javascript:void(0)" class="branches dropbtn">교회 소개</a>
+              <a href="javascript:void(0)">교회소개</a>
               <div class="dropdown-content">
                 <a href="pages/about.html">오치애양교회</a>
                 <a href="pages/pastor.html">담임목사</a>
                 <a href="pages/location">찾아오는 길</a>
               </div>
             </li>
-            <li class="nav"><a href="pages/worship.html">예배</a></li>
-            <li class="nav"><a href="pages/discipleship.html">성장</a></li>
+            <li><a href="pages/worship.html">예배</a></li>
+            <li><a href="pages/discipleship.html">성장</a></li>
+            <li>
+              <a class="youtube" href="https://www.youtube.com/channel/UCoWj-yuyBAwW4ScmQJKhTTg" target="_blank" title="오치애양교회 Youtube 채널">
+                <img src="images/youtube_social_circle_dark.png">
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
+
+      <div class="cover">
+        <section class="cover-section">
+          <p>"자생력 있는 성도가 되어 생동하게 하는 공동체를 세우는"</p>
+          <h1>오치애양교회</h1>
+        </section>
+      </div>
     </div>
-
-
-    <section>
-
-    </section>
+    
     <section>
       <article>
 
