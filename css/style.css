@@ -80,6 +80,7 @@
   background:rgba(01,44,22,0.6);
   position:fixed;
   top:0;
+  z-index:1;
   width:100%;
   height:100px;
 }
@@ -144,7 +145,6 @@ nav img {
   background:rgba(01,44,22,0.6);
   min-width:160px;
   box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index:1;
 }
 .dropdown-content a {
   color:white;
@@ -157,23 +157,6 @@ nav img {
 
 .dropdown:hover .dropdown-content {
   display:block;
-}
-
-/*cover-section style*/
-.cover-section {
-  height:600px;
-  text-align:center;
-  padding:250px 0 150px;
-}
-
-.cover-section p {
-  font-size:30px;
-  font-weight:bold;
-}
-
-.cover h1 {
-  font-size:60px;
-  padding:30px;
 }
 
 /*main section style*/
@@ -227,4 +210,135 @@ footer th {
 
 #border_right {
   border-right:2px solid white;
+}
+
+
+/*index.html only -------------*/
+/*cover section style*/
+.cover-index {
+  height:600px;
+  text-align:center;
+  padding:280px 0px 180px;
+}
+
+.cover-index p {
+  font-size:30px;
+  font-weight:bold;
+}
+
+.cover-index h1 {
+  font-size:60px;
+  padding:30px;
+}
+
+/*--------------------------*/
+
+/*about.html only-----------*/
+/*cover section style*/
+.cover-about {
+  height:400px;
+  text-align:center;
+  padding:183.2px 0px 83.2px;
+}
+
+.cover-about p {
+  font-size:30px;
+  font-weight:bold;
+}
+
+.cover-about h1 {
+  font-size:55px;
+  padding:30px;
+}
+
+/*main section style*/
+.history {
+  height:500px;
+  padding:50px 100px 50px 60px;
+}
+
+.history img {
+  width:80%;
+}
+
+.history p {
+  font-size:20px;
+  padding:10px 0;
+}
+
+
+.vision {
+  position:relative;
+  z-index:0;
+  width:100%;
+  height:900px;
+  background:rgba(220,220,220,0.3);
+  padding:50px 60px;
+}
+
+.vision .opaque-background {
+  position:absolute;
+  z-index:-1;
+  height:800px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:url(../images/life.jpg) no-repeat center center;
+  background-size:contain;
+  min-width:100%;
+  min-height:100%;
+  opacity:0.1;  
+}
+
+.vision h2 {
+  font-size:32px;
+}
+
+.vision p {
+  text-align:center;
+  font-weight:bold;
+  font-size:24px;
+  padding:60px 0 80px;
+}
+
+.vision img {
+  margin: 10px auto 50px;
+}
+
+.vision h3 {
+  padding:20px 10%;
+}
+
+.vision ul {
+  font-size:18px;
+  padding:0 15%;
+}
+
+.block-display {
+  display:block;
+  height:500px;
+}
+
+.goal {
+  height:480px;
+  padding:80px 60px;
+}
+
+.goal p {
+  text-align:center;
+  padding:10px 20%;
+  font-size:20px;
+}
+
+.goal p:first-of-type {
+  text-decoration:underline;
+  font-weight:bold;
+  font-size:24px;
+  padding:0 0 30px;
+}
+
+.goal i {
+  vertical-align:middle;
+  padding:0 10px;
 }
