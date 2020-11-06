@@ -208,7 +208,7 @@ footer th {
   padding:0 15px;
 }
 
-#border_right {
+footer #border_right {
   border-right:2px solid white;
 }
 
@@ -233,7 +233,7 @@ footer th {
 
 /*--------------------------*/
 
-/*about.html only-----------*/
+/*교회소개 style-------------*/
 /*cover section style*/
 .cover-about {
   height:400px;
@@ -314,6 +314,9 @@ footer th {
   font-size:18px;
   padding:0 15%;
 }
+.vision li {
+  padding:3px 0;
+}
 
 .block-display {
   display:block;
@@ -321,24 +324,99 @@ footer th {
 }
 
 .goal {
-  height:480px;
+  height:500px;
   padding:80px 60px;
+  background:rgb(143, 188, 143);
+  color:rgb(47, 79, 79);
 }
 
 .goal p {
   text-align:center;
   padding:10px 20%;
-  font-size:20px;
+  font-size:22px;
 }
 
 .goal p:first-of-type {
   text-decoration:underline;
   font-weight:bold;
-  font-size:24px;
-  padding:0 0 30px;
+  font-size:28px;
+  padding:0 0 60px;
 }
 
 .goal i {
   vertical-align:middle;
   padding:0 10px;
+}
+
+.greetings {
+  height:1000px;
+  padding:50px 60px;
+}
+
+.greetings h2 {
+  font-size:32px;
+  padding-bottom:80px;
+}
+
+.greetings p {
+  font-size:18px;
+  padding:10px 80px 10px 60px;
+  line-height:30px;
+}
+
+.greetings p:first-of-type {
+  font-size:20px;
+  padding-bottom:30px
+}
+
+.greetings p:last-of-type {
+  font-size:22px;
+}
+
+.greetings img {
+  width:60%;
+  margin:0 40px;
+}
+
+.career {
+  height:800px;
+  background:rgba(220,220,220,0.3);
+  padding:50px 60px;
+}
+
+.career h2 {
+  font-size:32px;
+  padding-bottom:40px;
+}
+
+.career .border {
+  border:3px solid black;
+  border-radius:50px;
+}
+
+.career div {
+  margin:0 30px;
+  height:560px;
+}
+
+.career article {
+  height:555px;
+}
+
+.career .border-right {
+  border-right:3px solid black;
+}
+
+.career article ul {
+  padding:20px 50px;
+}
+
+.career article h3 {
+  font-size:22px;
+  padding:30px 30px 0;
+}
+
+.career article li {
+  font-size:16px;
+  padding:8px 0;
 }
