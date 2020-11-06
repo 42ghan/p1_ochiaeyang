@@ -4,191 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="danhaniyo">
-    <style>
-      * {
-        margin:0;
-        outline:0;        
-      }
-      
-      /*including the padding and border in the total width and height*/
-      * {
-        box-sizing:border-box;
-      }
-
-      /*responsive grid-view with 12 columns*/
-      .col-1 {
-        width:8.33%;
-      }
-      
-      .col-2 {
-        width:16.66%;
-      }
-      
-      .col-3 {
-        width:25%;
-      }
-
-      .col-4 {
-        width:33.33%;
-      }
-      
-      .col-5 {
-        width:41.66%;
-      }
-
-      .col-6 {
-        width:50%;
-      }
-
-      .col-7 {
-        width:58.33%;
-      }
-
-      .col-8 {
-        width:66.66%
-      }
-
-      .col-9 {
-        width:75%;
-      }
-
-      .col-10 {
-        width:83.33%;
-      }
-
-      .col-11 {
-        width:91.66%;
-      }
-
-      .col-12 {
-        width:100%
-      }
-
-      /*float to the left & padding of 15px to all columns*/
-      [class*="col-"] {
-        display:grid;
-        float:left;
-      }
-
-      /*clear float to the left for inline-row elements*/
-      .row::after {
-        content:"";
-        clear:both;
-      }
-
-      /*header & cover bar style*/
-      .header-cover {
-        background:url(images/background1.jpg) no-repeat;
-        background-size:cover;
-      }
-
-      /*nav_bar style*/
-      .nav-bar {
-        background:rgba(01,44,22,0.6);
-        height:100px;
-      }
-      
-      header, nav {
-        height:100px;
-      }
-
-      #logo {
-        width:40px;
-        vertical-align:middle;
-      }
-
-      header a,
-      nav a {
-        color:white;
-        text-decoration:none;
-      }
-
-      header a {
-        font-size:40px;
-        font-weight:bold;
-        padding:22.96px 0 22.96px 25px;
-        vertical-align:middle;
-      }
-
-      nav ul {
-        list-style-type:none;
-        overflow:hidden;
-        text-align:right;
-        padding-right:60px;
-        height:100px;
-      }
-
-      nav li {
-        display:inline-block;
-        font-size:18px;
-      }
-
-      nav li a {
-        display:block;
-        padding:38px 30px;
-      }
-
-      nav a:hover:not(.youtube),
-      .dropdown-content a:hover {
-        background:rgba(01,44,22,0.6);
-      }
-
-      .youtube {
-        padding:33px 30px;
-      }
-
-      nav img {
-        width:34px;
-        vertical-align:middle;
-      }
-
-      .dropdown-content {
-        display:none;
-        position:absolute;
-        background:rgba(01,44,22,0.4);
-        min-width:160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index:1;
-      }
-      .dropdown-content a {
-        color:white;
-        padding:12px 16px;
-        font-size:16px;
-        text-decoration:none;
-        display:block;
-        text-align:center;
-      }
-
-      .dropdown:hover .dropdown-content {
-         display: block;
-      }
-
-      /*cover-section style*/
-      .cover-section {
-        height:500px;
-        text-align:center;
-        padding:150px 0;
-      }
-      
-      .cover-section p {
-        font-size:30px;
-        font-weight:bold;
-      }
-
-      .cover h1 {
-        font-size:60px;
-        padding:30px;
-      }
-
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    
   </head>
   <body>
     <div class="header-cover">
       <div class="row nav-bar">
         <header class="col-5"> 
           <a href="index.html">
-                <img src="images/favicon/android-icon-96x96.png" id="logo">
-                오치애양교회
+            <img src="images/favicon/android-icon-96x96.png" id="logo">
+            오치애양교회
           </a>
         </header>
 
@@ -221,13 +47,23 @@
       </div>
     </div>
     
-    <section>
+    <main class="moto">
       <article>
-
+        <h2>2020년도 표어</h2>
+        <img src="images/repair.png">
+        <p id="moto">보수하고 수축하여 다시 세웁시다</p>
+        <p id="verse">"네게서 날 자들이 오래 황폐된 곳들을 다시 세울 것이며 너는 역대의 파괴된 기초를 쌓으리니
+        너를 일컬어 무너진 데를 보수하는 자라 할 것이며 길을 수축하여 거할 곳이 되게 하는 자라 하리라" (이사야 58:12)</p>
       </article>
-    </section>
+    </main>
     <footer>
-
+      <p>오치애양교회, (우) 61052 광주광역시 북구 안산로 47-8</p>
+      <table>
+        <tr>
+          <th id="border_right">Tel: 062-269-3700</th>
+          <th>Email: ochiaeyang@gmail.com</th>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>
