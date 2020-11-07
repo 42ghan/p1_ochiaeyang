@@ -360,7 +360,7 @@ footer #border_right {
 
 .greetings p {
   font-size:18px;
-  padding:10px 80px 10px 60px;
+  padding:10px 80px 10px 15%;
   line-height:30px;
 }
 
@@ -374,7 +374,7 @@ footer #border_right {
 }
 
 .greetings img {
-  width:60%;
+  width:50%;
   margin:0 40px;
 }
 
@@ -419,4 +419,28 @@ footer #border_right {
 .career article li {
   font-size:16px;
   padding:8px 0;
+}
+
+.location-contact {
+  height:750px;
+  padding:50px 60px;
+}
+
+.location-contact h2 {
+  font-size:32px;
+}
+
+.location-contact iframe {
+  width:90%; 
+  height:600px;
+  padding:60px 0 50px 120px;
+}
+
+.location-contact p:first-of-type {
+  padding-top:70px;
+}
+
+.location-contact p {
+  font-size:18px;
+  padding:12px 50px 0 20px;
 }
