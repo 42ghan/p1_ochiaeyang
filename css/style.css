@@ -433,7 +433,7 @@ footer #border_right {
 .location-contact iframe {
   width:90%; 
   height:600px;
-  padding:60px 0 50px 120px;
+  padding:60px 0 50px 15%;
 }
 
 .location-contact p:first-of-type {
@@ -443,4 +443,27 @@ footer #border_right {
 .location-contact p {
   font-size:18px;
   padding:12px 50px 0 20px;
+}
+
+.worship {
+  height:700px;
+  padding:50px 60px;
+}
+.worship h2 {
+  font-size:32px;
+}
+
+.worship iframe {
+  width:90%;
+  height:500px;
+  padding:60px 0 0 30px;
+}
+
+.worship h3 {
+  padding:70px 0 30px;
+  text-decoration:underline;
+}
+
+.worship img {
+  width:80%;
 }
