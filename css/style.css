@@ -89,6 +89,11 @@ header, nav {
   height:100px;
 }
 
+.s-screen-menu,
+.s-screen-dropdown-content {
+  display:none;
+}
+
 #logo {
   width:40px;
   vertical-align:middle;
@@ -196,7 +201,7 @@ footer {
   height:100px;
   text-align:center;
   color:white;
-  padding:15px
+  padding:15px;
 }
 
 footer table {
@@ -212,10 +217,10 @@ footer #border_right {
   border-right:2px solid white;
 }
 
-
 /*index.html only -------------*/
 /*cover section style*/
 .cover-index {
+  width:100%;
   height:600px;
   text-align:center;
   padding:280px 0px 180px;
@@ -466,4 +471,75 @@ footer #border_right {
 
 .worship img {
   width:80%;
+}
+
+
+/*For smaller screens*/
+@media only screen and (max-width:950px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width:100%;
+    display:block;
+  }
+  
+  header .s-screen-header {
+    display:block;
+    position:absolute;
+    z-index:1;
+    font-size:35px;
+    height:100px;
+  }
+
+  header .s-screen-dropbtn {
+    display:inline-block;
+    padding:22.96px 33px;
+    height:100px;
+    float:right;
+  }
+  
+  nav ul {
+    display:none;
+  }
+
+  .s-screen-menu {
+    display:inline-block;
+    float:right;
+    width:100px;
+  }
+
+  .s-screen-dropdown-content{
+    display:none;
+    position:relative;
+    z-index:1;
+    background:rgba(01,44,22,0.6);
+    width:280%;
+    float:right;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .s-screen-dropdown-content img {
+    width:30px;
+  }
+
+  .s-screen-dropdown-content a {
+    color:white;
+    padding:12px 16px;
+    font-size:16px;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+  }
+
+  .s-screen-menu a:hover {
+    background:rgba(01,44,22,0.6);
+  }
+  
+  .s-screen-menu:hover .s-screen-dropdown-content {
+    display:block;
+  }
+
+  .cover-index {
+    font-size:60%;
+  }
+
 }
