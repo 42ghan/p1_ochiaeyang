@@ -491,7 +491,7 @@ footer #border_right {
   }
 
   header .s-screen-dropbtn {
-    display:inline-block;
+    display:block;
     padding:22.96px 33px;
     height:100px;
     float:right;
@@ -502,7 +502,7 @@ footer #border_right {
   }
 
   .s-screen-menu {
-    display:inline-block;
+    display:block;
     float:right;
     width:100px;
   }
@@ -540,6 +540,10 @@ footer #border_right {
 
   .cover-index {
     font-size:60%;
+  }
+
+  main, section, article {
+    padding:0;
   }
 
 }
