@@ -269,7 +269,6 @@ footer {
 
 .goal p {
   text-align:center;
-  word-break:keep-all;
   font-size:15px;
   padding-bottom:10px;
 }
@@ -336,6 +335,47 @@ footer {
 
 .career li {
   padding:5px 0;
+}
+
+.worship {
+  padding:30px 40px 50px;
+}
+
+.worship iframe {
+  width:100%;
+  min-height:200px;
+  margin:50px 0 0;
+}
+
+.worship i {
+  font-size:16px;
+  vertical-align:middle;
+  padding-right:5px;
+}
+
+.worship p {
+  padding:30px 0 50px;
+  font-size:12px;
+}
+
+.worship img {
+  width:100%;
+  margin-top:20px;
+}
+
+.location {
+  padding:30px 40px 50px;
+}
+
+.location iframe {
+  width:100%;
+  height:300px;
+  margin:35px 0;
+}
+
+.location p {
+  font-size:15px;
+  padding-bottom:10px;
 }
 
 @media only screen and (min-width: 600px) {
