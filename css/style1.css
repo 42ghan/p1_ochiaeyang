@@ -19,6 +19,13 @@
   src:url(../font/NanumBarunGothic.otf)
 }
 
+header,
+main,
+footer,
+.cover-sub {
+  font-family:maruburi;
+}
+
 /*Including the padding and border in the total width and height*/
 * {
   box-sizing:border-box;
@@ -36,7 +43,6 @@
 }
 
 header {
-  font-family:maruburi;
   height:80px;
   width:100%;
   background:rgba(01,44,22,0.6);
@@ -129,14 +135,17 @@ header a {
   padding-top:12px;
 }
 
-.moto {
-  font-family:maruburi;
-  height:auto;
-  padding:30px;
+main h2 {
+  font-size:22px;
 }
 
-.moto h2 {
-  font-size:22px;
+main h3 {
+  font-size:18px;
+}
+
+.moto {
+  height:auto;
+  padding:30px;
 }
 
 .moto img {
@@ -177,14 +186,10 @@ footer {
 .cover-sub {
   height:240px;
   text-align:center;
-  font-family:maruburi;
   font-size:24px;
   padding:136px 0 56px;
 }
 
-.history-vision {
-  font-family:maruburi;
-}
 
 .history {
   height:auto;
@@ -224,10 +229,6 @@ footer {
   opacity:0.15;
 }
 
-.vision-statement h2 {
-  font-size:22px;
-}
-
 .vision-statement p {
   text-align:center;
   font-weight:bold;
@@ -253,7 +254,6 @@ footer {
 .vision1 h3,
 .vision2 h3 {
   margin-bottom:20px;
-  font-size:18x;
 }
 
 .vision1 li,
@@ -265,10 +265,6 @@ footer {
   padding:30px 30px 60px;
   background:rgb(143, 188, 143);
   color:rgb(47, 79, 79);
-}
-
-.goal h2 {
-  font-size:22px;
 }
 
 .goal p {
@@ -289,6 +285,59 @@ footer {
   padding:30px 0;
   font-weight:bold;
 }
+
+
+
+.greetings {
+  padding:30px 40px 50px;
+}
+
+.greetings img {
+  float:right;
+  width:120px;
+  margin:10px 5px 10px;
+}
+
+.greetings p {
+  font-size:15px;
+  padding-bottom:12px;
+  line-height:20px;
+}
+
+.greetings p:first-of-type {
+  font-size:18px;
+  padding:40px 0 30px;
+}
+
+.greetings p:last-of-type {
+  font-size:16px;
+  padding:20px 0;
+}
+
+.career {
+  padding:30px 40px 50px;
+  background:rgb(245,245,220);
+}
+
+.career article {
+  border:solid 3px rgb(24,24,24);
+  border-radius:20px;
+  padding:20px;
+  margin:20px 0;
+}
+
+.career article:first-of-type {
+  margin-top:30px;
+}
+
+.career h3 {
+  padding-bottom:20px;
+}
+
+.career li {
+  padding:5px 0;
+}
+
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
