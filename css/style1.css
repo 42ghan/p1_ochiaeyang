@@ -14,6 +14,11 @@
   src:url(../font/NanumBrush.otf);
 }
 
+@font-face {
+  font-family:barungothic;
+  src:url(../font/NanumBarunGothic.otf)
+}
+
 /*Including the padding and border in the total width and height*/
 * {
   box-sizing:border-box;
@@ -24,10 +29,10 @@
   width: 100%;
 }
 
+/*Header-nav design*/
 .header-cover {
   background:url(../images/background1.jpg) no-repeat center;
   background-size:cover;
-  height:480px;
 }
 
 header {
@@ -107,6 +112,7 @@ header a {
   display:block;
 }
 
+/*Cover-index design*/
 .cover-index {
   font-family:brush;
   text-align:center;
@@ -125,8 +131,8 @@ header a {
 
 .moto {
   font-family:maruburi;
-  height:450px;
-  padding:30px 30px;
+  height:auto;
+  padding:30px;
 }
 
 .moto h2 {
@@ -154,8 +160,10 @@ header a {
 #verse {
   font-size:14px;
   line-height:20px;
+  padding-bottom:20px;
 }
 
+/*Footer design*/
 footer {
   background:rgb(54,54,54);
   height:100px;
@@ -165,6 +173,122 @@ footer {
   padding:15px;
 }
 
+/*Pages design*/
+.cover-sub {
+  height:240px;
+  text-align:center;
+  font-family:maruburi;
+  font-size:24px;
+  padding:136px 0 56px;
+}
+
+.history-vision {
+  font-family:maruburi;
+}
+
+.history {
+  height:auto;
+  padding:30px 40px;
+}
+
+.history img {
+  display:block;
+  width:120px;
+  margin:20px auto 50px;
+}
+
+.history p {
+  font-size:15px;
+  margin-bottom:12px;
+}
+
+.vision-statement {
+  height:auto;
+  position:relative;
+  z-index:0;
+  background:rgba(220,220,220,0.6);
+  padding:30px;
+}
+
+.vision-statement .opaque-background {
+  position:absolute;
+  z-index:-1;
+  min-width:100%;
+  min-height:100%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:url(../images/life.jpg) no-repeat center center;
+  background-size:cover;
+  opacity:0.15;
+}
+
+.vision-statement h2 {
+  font-size:22px;
+}
+
+.vision-statement p {
+  text-align:center;
+  font-weight:bold;
+  padding:40px 0;
+}
+
+.vision1,
+.vision2 {
+  padding:30px 40px 60px;
+}
+
+.vision2 {
+  background:rgb(245,245,220);
+}
+
+.vision1 img,
+.vision2 img {
+  display:block;
+  width:140px;
+  margin:30px auto 50px;
+}
+
+.vision1 h3,
+.vision2 h3 {
+  margin-bottom:20px;
+  font-size:18x;
+}
+
+.vision1 li,
+.vision2 li {
+  font-size:15px;
+}
+
+.goal {
+  padding:30px 30px 60px;
+  background:rgb(143, 188, 143);
+  color:rgb(47, 79, 79);
+}
+
+.goal h2 {
+  font-size:22px;
+}
+
+.goal p {
+  text-align:center;
+  word-break:keep-all;
+  font-size:15px;
+  padding-bottom:10px;
+}
+
+.goal i {
+  vertical-align:middle;
+  font-size:15px;
+  padding:0 8px 0 10px;
+}
+
+.goal p:first-of-type {
+  font-size:16px;
+  padding:30px 0;
+  font-weight:bold;
+}
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
