@@ -49,6 +49,34 @@
   src:url(../font/NanumGothicExtraBold.otf);
 }
 
+@font-face {
+  font-family:'Katuri';
+  src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'Cafe24Shiningstar';
+  src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'Cafe24Dongdong';
+  src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Dongdong.woff') format('woff');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'Bitgoeul_Bold';
+  src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Bitgoeul_Bold.woff') format('woff');
+  font-weight:normal;
+  font-style:normal;
+}
+
 header {
   font-family:maruburi;
 }
@@ -165,7 +193,7 @@ header a {
 /*Cover-index design*/
 .cover-index {
   text-align:center;
-  padding:240px 0 120px;
+  padding:220px 0 120px;
 }
 
 .cover-index p {
@@ -174,6 +202,7 @@ header a {
 }
 
 .cover-index h1 {
+  font-family:nanumbarunpen;
   font-size:50px;
   padding-top:12px;
 }
