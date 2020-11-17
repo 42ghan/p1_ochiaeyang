@@ -7,7 +7,8 @@
   <meta name="author" content="danhaniyo">
   <title>찾아오는 길 | 오치애양교회 (Ochi Aeyang Church)</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="../css/style_mobile.css">
+  <link rel="stylesheet" media="screen and (min-width:800px)" href="../css/style_desktop.css">
   <link rel="short icon" href="../images/favicon/favicon-32x32.png">
 
 </head>
@@ -15,11 +16,11 @@
 <body>
   <div class="header-cover">
     <header>
-      <a href="../index.html" class="mobile-logo">
+      <a href="../index.html" class="mobile-logo desktop-logo">
         <img src="../images/favicon/android-icon-96x96.png">
         <h1>오치애양교회</h1>
       </a>
-      <div class="mobile-menu">
+      <nav class="mobile-menu">
         <a href="javascript:void(0)" class="mobile-dropbtn"><i class="material-icons">menu</i></a>
         <div class="mobile-dropdown-content">
           <a href="../pages/about.html">오치애양교회</a>
@@ -32,7 +33,27 @@
             <img src="../images/youtube_social_circle_dark.png">
           </a>
         </div>
-      </div>
+      </nav>
+      <nav class="desktop-menu">
+        <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0)">교회소개</a>
+            <div class="dropdown-content">
+              <a id="dropdown-size" href="../pages/about.html">오치애양교회</a>
+              <a id="dropdown-size" href="../pages/pastor.html">담임목사</a>
+              <a id="dropdown-size" href="../pages/location.html">찾아오는 길</a>
+            </div>
+          </li>
+          <li><a href="../pages/worship.html">예배</a></li>
+          <li><a href="../ages/discipleship.html">성장</a></li>
+          <li>
+            <a class="youtube" href="https://www.youtube.com/channel/UCoWj-yuyBAwW4ScmQJKhTTg" target="_blank"
+              title="오치애양교회 Youtube 채널">
+              <img src="../images/youtube_social_circle_dark.png">
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="cover-sub">
@@ -61,8 +82,8 @@
 
   <footer>
     <p>오치애양교회, (우) 61052 광주광역시 북구 안산로 47-8</p>
-    <p>Tel: 062-269-3700</p>
     <p>Email: ochiaeyang@gmail.com</p>
+    <p>Tel: 062-269-3700</p>
   </footer>
 </body>
 
