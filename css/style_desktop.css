@@ -148,6 +148,15 @@ main h3 {
   padding:192px 0 93px;
 }
 
+.goal,
+.greetings,
+.career,
+.worship,
+.location,
+.bulletin {
+  padding:50px 60px;
+}
+
 .history {
   padding:50px 130px;
   word-break:keep-all;
@@ -201,10 +210,6 @@ main h3 {
   line-height:26px;
 }
 
-.goal {
-  padding:50px 60px;
-}
-
 .goal p {
   font-size:20px;
   padding-bottom:16px;
@@ -217,10 +222,6 @@ main h3 {
 .goal p:first-of-type {
   font-size:26px;
   padding:50px 0;
-}
-
-.greetings {
-  padding:50px 60px;
 }
 
 .greetings img {
@@ -244,11 +245,6 @@ main h3 {
   padding:20px 12% 50px;
 }
 
-.career {
-  padding:50px 60px;
-}
-
-
 .career article {
   font-size:18px;
   margin:40px 8%;
@@ -256,10 +252,6 @@ main h3 {
 
 .career article:first-of-type {
   margin-top:60px;
-}
-
-.worship {
-  padding:50px 60px;
 }
 
 .worship iframe {
@@ -280,10 +272,6 @@ main h3 {
   margin:50px auto;
 }
 
-.location {
-  padding:50px 60px;
-}
-
 .location iframe {
   width:60%;
   height:500px;
@@ -293,6 +281,18 @@ main h3 {
 .location p {
   font-size:18px;
   padding:0 0 14px 10%;
+}
+
+.mobile-bulletin {
+  display:none;
+}
+
+.desktop-bulletin {
+  display:block;
+  width:100%;
+  height:600px;
+  border:0;
+  padding:50px 20px;
 }
 
 /*Footer*/
