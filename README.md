@@ -1,2 +1,2 @@
 # p1_ochiaeyang
-A project for creating a website for Ochi-aeyang church
+Creating a website for Ochi-aeyang church
